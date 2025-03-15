@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Skills - Courses</title>
+    <link rel="stylesheet" href="course.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #181818;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .course-card {
+            background-color: #282828;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .course-description {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .course-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #f59e0b;
+            margin-top: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Our Courses</h1>
+
+        <div class="course-grid">
+
+            <div class="course-card">
+                <h2 class="course-title"><a href="">Web Development</a></h2>
+                <p class="course-description">Learn the fundamentals of web development, including HTML, CSS, and JavaScript. Build responsive websites and web applications.</p>
+                <p class="course-price">&#8377; 4599</p>
+            </div>
+
+            <div class="course-card">
+                <h2 class="course-title"><a href="">Data Science</a></h2>
+                <p class="course-description">Master the art of data analysis and machine learning. Gain valuable skills in Python, R, and data visualization.</p>
+                <p class="course-price"> &#8377; 6999</p>
+            </div>
+
+            <div class="course-card">
+                <h2 class="course-title"><a href="">Cybersecurity</a></h2>
+                <p class="course-description">Protect yourself and your data from cyber threats. Learn ethical hacking, network security, and penetration testing.</p>
+                <p class="course-price">&#8377; 4999</p>
+            </div>
+
+            <div class="course-card">
+                <h2 class="course-title"><a href="">Artificial Intelligence</a></h2>
+                <p class="course-description">Explore the world of AI and machine learning. Develop intelligent systems and algorithms using Python and TensorFlow.</p>
+                <p class="course-price">&#8377; 7500</p>
+            </div>
+
+            <div class="course-card">
+                <h2 class="course-title"><a href="">Mobile App Development</a></h2>
+                <p class="course-description">Build native mobile apps for iOS and Android using Swift and Kotlin. Create engaging user experiences.</p>
+                <p class="course-price">&#8377; 6500</p>
+            </div>
+
+            <div class="course-card">
+                <h2 class="course-title"><a href="">Software Engineering</a></h2>
+                <p class="course-description">Learn the principles of software engineering, including design patterns, object-oriented programming, and agile methodologies.</p>
+                <p class="course-price">&#8377; 3500</p>
+            </div>
+
+            <div class="course-card">
+                <h2 class="course-title"><a href="">Cloud Computing</a></h2>
+                <p class="course-description">Master the concepts of cloud computing, including AWS, Azure, and Google Cloud. Build and deploy cloud-based applications.</p>
+                <p class="course-price">&#8377; 4999</p>
+            </div>
+
+            <div class="course-card">
+                <h2 class="course-title"><a href="">Game Development</a></h2>
+                <p class="course-description">Learn to create your own video games using Unity or Unreal Engine. Explore game design, programming, and 3D graphics.</p>
+                <p class="course-price">&#8377; 3599</p>
+            </div>
+
+            <div class="course-card">
+                <h2 class="course-title"><a href="">Java Development</a></h2>
+                <p class="course-description">Learn to create your own Android App/Software using Java Development and using Spring Frame work. and 3D graphics.</p>
+                <p class="course-price">&#8377; 3599</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="course.js"></script>
+
+</body>
+</html>

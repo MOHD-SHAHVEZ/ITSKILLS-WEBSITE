@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Geologica:wght@100;200&family=Playfair:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script&family=Geologica:wght@100;200&family=Merienda:wght@300&family=Playfair:ital,wght@1,300&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: merienda;
+  font-size: small;
+}
+
+.video-head{
+  height: 80vh;
+  width: 100vw;
+  box-sizing: border-box;
+  object-fit: fill;
+  overflow: hidden;
+  border-radius: 6px;
+  position: relative;
+  z-index: -1;
+  top: -20vh;
+}
+#bg-video{
+  height: inherit;
+  width: inherit;
+  object-fit: fill;
+}
+.content{
+  text-align: center;
+  position: relative;
+  top: 45vh;
+  z-index: 10;
+  color: white;
+}
+.content h3{
+  font-size: medium;
+}
+.btn a{
+  color: white;
+}
+
+@media (max-width:700px) {
+  .video-head{
+    height: 30vh;
+    width: 100vw;
+    box-sizing: border-box;
+  object-fit: fill;
+  overflow: hidden;
+  border-radius: 6px;
+  position: relative;
+  z-index: -1;
+  top: -10vh;
+  }
+  #bg-video{
+    height: 30vh;
+    width: 100vw;
+    object-fit: fill;
+  }
+  .content{
+    text-align: center;
+    position: relative;
+    top: 16vh;
+    z-index: 10;
+    color: white;
+  }
+  .content h3{
+    font-size: medium;
+  }
+  .btn a{
+    color: white;
+  }
+}
+
+#menu-item a{
+  font-size: medium;
+  font-weight: normal; 
+}
+#menu-item a:hover{
+  color: black;
+}
+
+
+/* All heading Font size:  */
+h1,h2,h3,h4{
+  font-size:x-large;
+}
+
+
+
+
+
+
+
+
+/* About Us section:  */
+.welcome{
+  margin-top: -10vh;
+  display: flex;
+  justify-content: center;
+}
+.heading{
+  text-align: center;
+}
+.about-program{
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-around;
+}
+.box{
+  width: 30vw;
+  height: 35vh;
+  margin: 2vh 0 2vh 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+.box #consultancy{
+  height: 15vh;
+}
+/* LandScape Mode Media Query:  */
+@media only screen and (min-device-width: 480px) and (max-device-width: 950px) and (orientation: landscape) {
+  /* .about-program{
+      flex-direction: column;
+  } */
+  .about-program{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+  }
+  .box{
+      margin-top: 2vh;
+      width: 80vw;
+      height: 45vh;
+      padding-top: 1vh;
+  }
+
+  .box #consultancy{
+      height: 10vh;
+  }
+}
+
+@media(max-width:700px){
+  .welcome{
+    margin-top: 10px;
+  }
+  .about-program{
+      flex-direction: column;
+  }
+  .about-program{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      margin-top: 2vh;
+  }
+  .box{
+      margin-top: 2vh;
+      width: 80vw;
+      height: 25vh;
+      padding-top: 1vh;
+  }
+
+  .box #consultancy{
+      height: 10vh;
+  }
+}
+/* Course program section:  */
+.course-program{
+  margin-top: 4vh;
+  padding-bottom: 10vh;
+  background-color: rgb(228, 229, 229);
+  overflow: auto;
+}
+.course_heading{
+  padding: 8vh 0 0 4vh;
+}
+.course_first_row{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3vh;
+}
+.course_second_row{
+  margin-top: 4.5vh;
+  display: flex;
+  justify-content: space-around;
+}
+.course_box{
+  text-transform: capitalize;
+}
+
+/* LandScape Mode Media Query:  */
+@media only screen and (min-device-width: 480px) and (max-device-width: 950px) and (orientation: landscape) {
+  .course_first_row{
+      margin: 4vh 0 0 5vw;
+  }
+  .course_box{
+      text-transform: capitalize;
+      margin-top: 5vh;
+      padding: 0 1vw 0 1vw;
+  }
+  .course_second_row{
+      margin: 4vh 0 0 5vw;
+  }
+}
+@media(max-width:700px){
+  .course_first_row{
+      flex-direction: column;
+      margin: 4vh 0 0 5vw;
+  }
+  .course_box{
+      text-transform: capitalize;
+      margin-top: 5vh;
+  }
+  .course_second_row{
+      flex-direction: column;
+      margin: 4vh 0 0 5vw;
+  }
+}
+
+
+/*Services Program Section */
+.service_program{
+  height: 80vh;
+  width: 99w;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.service_heading{
+  margin: 5vh 0 0 5vw;
+}
+.services_first_row{
+  margin-top: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.service_second_row{
+  margin-top: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  text-align: center;
+}
+#ser_content_heading{
+  background-color: rgb(228, 229, 229);
+}
+
+.service_box{
+  height: 25vh;
+  width: 29vw;
+  box-sizing: border-box;
+  /* border: 5px solid blue; */
+  margin: 1vh;
+  padding: 1vh;
+  box-shadow: 0px 4px 8px black;
+  overflow: auto;
+  transition: 0.8s;
+  border-radius: 8px;
+  
+}
+.service_box:hover{
+  box-shadow: 2px 8px 16px  rgb(0, 0, 0);
+  transform: scale(1.06);
+  transition: 0.8s;
+
+  /* Scalling Effect daal na rah ra */
+}
+.services_first_row p{
+  margin-top: 2.5vh;
+}
+.service_second_row p{
+  margin-top: 2.5vh;
+}
+
+/* LandScape Mode Media Query:  */
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 950px) and (orientation: landscape) {
+  .service_box{
+      height: 35vh;
+      width: 63vw;
+      box-sizing: border-box;
+      /* border: 5px solid blue; */
+      margin: 1vh;
+      padding: 1vh;
+      box-shadow: 2px 4px 8px black;
+      overflow: auto;   
+  }
+  .service_program{
+      height: 105vh;
+      width: 99vw;
+      box-sizing: border-box;
+      overflow: hidden;
+  }
+}
+
+
+@media (max-width:700px) {
+  .service_program{
+      height: 160vh;
+      width: 99vw;
+      box-sizing: border-box;
+      overflow: hidden;
+  }
+  .services_first_row{
+      flex-direction: column;
+  }
+  .service_second_row{
+      flex-direction: column;
+  }
+
+  .service_box{
+      height: 20vh;
+      width: 63vw;
+      box-sizing: border-box;
+      /* border: 5px solid blue; */
+      margin: 1vh;
+      padding: 1vh;
+      box-shadow: 2px 4px 8px black;
+      overflow: auto;   
+  }
+}
+@media(max-width:430px){
+  .service_box{
+      height: 20vh;
+      width: 80vw;
+  }
+}
+@media(max-width:300px) {
+  .service_box{
+      height: 40vh;
+      overflow: auto;
+  }
+}
